@@ -1,35 +1,35 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+body {
+  font-family: sans-serif;
+  margin: 1rem;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+nav a {
+  margin-right: 1rem;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+table {
+  border-collapse: collapse;
+  margin-top: 1rem;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.usuario {
+  float: right;
+}
+
+.detalhes {
+  margin-top: 1rem;
+}
+
+.erro {
+  color: red;
+}
+
+.sucesso {
+  color: green;
 }
