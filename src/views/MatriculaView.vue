@@ -19,7 +19,7 @@
       <button type="submit">Matricular</button>
     </form>
     <p v-if="mensagem" class="sucesso">{{ mensagem }}</p>
-    <p v-if="erro" class="erro">{{ erro }}</p>
+    <p v-if="erro" class="erro">{{ erro }}</p>ListaDetalhes
   </div>
 </template>
 

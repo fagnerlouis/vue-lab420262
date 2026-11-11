@@ -2,8 +2,8 @@
 import { RouterLink, RouterView } from 'vue-router'
 import keycloak from './keycloak'
 
-// nome do usuário que veio no token do Keycloak
 const usuario = keycloak.tokenParsed?.preferred_username
+//const usuario = 'teste'
 
 function sair() {
   keycloak.logout({ redirectUri: window.location.origin })

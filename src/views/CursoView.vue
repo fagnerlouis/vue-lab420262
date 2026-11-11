@@ -108,6 +108,9 @@ function editar(c: Curso) {
 }
 
 async function excluir(c: Curso) {
+  if (!confirm('Deseja excluir ' + c.nome + '?')) {
+    return;
+  }
   try {
     await axios.delete(`curso/${c.id}`)
     cursoSelecionado.value = null
